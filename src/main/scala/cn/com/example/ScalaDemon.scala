@@ -129,13 +129,6 @@ object ScalaDemon {
 
   }
 
-  /**
-    * @title
-    * @Describe class
-    * @Params:
-    * @return:
-    * @Author: mh
-    * @Date: 2024/3/18
-    */
+
   case class TestScehma(peer_id: String, id_1: String, id_2: String, year: Int) extends Serializable
 }
