@@ -93,7 +93,7 @@ object ScalaDemon {
     val sortDF = step2DF.sort($"peer_id", $"year".desc)
     sortDF.show()
 
-    //3.2 对排序的结果DF进行处理，找出对应规则的数据。需要的临时
+    //3.2 对排序的结果DF进行处理，找出对应规则的数据
     val paramNumber = args
     //设置中间临时变量
     var countPeerIdTmp: String = ""
