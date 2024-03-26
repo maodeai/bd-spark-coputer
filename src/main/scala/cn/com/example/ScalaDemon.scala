@@ -89,7 +89,7 @@ object ScalaDemon {
     //If not, plus the count number from the biggest year to next year until the count number is bigger or equal than the given number. For example,
     // for ‘AE686(AE)’, the year is 2023, and count are:
 
-    //3.1 对2中的结果数据进行排序处理 针对yean降序
+    //3.1 对2中的结果数据进行排序处理 针对year降序
     val sortDF = step2DF.sort($"peer_id", $"year".desc)
     sortDF.show()
 
@@ -124,11 +124,9 @@ object ScalaDemon {
     })
     result.foreach(x => println(x))
 
-
     spark.stop()
 
   }
-
 
   case class TestScehma(peer_id: String, id_1: String, id_2: String, year: Int) extends Serializable
 }
